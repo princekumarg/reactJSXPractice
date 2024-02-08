@@ -3,6 +3,9 @@ import { Learnjsx } from "./assets/Component/learnjsx"
 import { Learncomp } from "./assets/Component/Learncomp"
 import { Learnprops } from "./assets/Component/Learnprops";
 import LearnLiftingSetup from "./assets/Component/LearnLiftingSetup";
+import LearnState from "./assets/Component/LearnState";
+import CounterApp from "./assets/Component/CounterApp";
+import LearnuseState from "./assets/Component/LearnuseState";
 function App() {
   let price=10;
   const getData=(data)=>{
@@ -15,6 +18,9 @@ function App() {
       <Learncomp/>{/*This is a component with variable*/}
       <Learnprops name="Prince" price={price}/>
       <LearnLiftingSetup myClick={getData}/>
+      <LearnState/>
+      <CounterApp/>
+      <LearnuseState/>
     </>
   )
 }
